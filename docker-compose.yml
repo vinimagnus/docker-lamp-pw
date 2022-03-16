@@ -1,7 +1,8 @@
 # Ambiente para Programação WEB
 # Prof. Vinícius Magnus
 # apache + php + mysql + phpmyqdmin
-version: "3"
+version: "3.8"
+# https://docs.docker.com/compose/compose-file/
 services:
     www:
         build: .
