@@ -6,7 +6,6 @@ version: "3.8"
 services:
     www:
         build: .
-        container_name: 'www'
         ports: 
             - "8001:80"
         volumes:
@@ -15,7 +14,6 @@ services:
             - default
     db:
         image: mysql:8.0
-        container_name: 'db'
         ports: 
             - "3306:3306"
         command: --default-authentication-plugin=mysql_native_password
@@ -27,7 +25,6 @@ services:
             - default
     phpmyadmin:
         image: phpmyadmin/phpmyadmin
-        container_name: 'phpmyadmin'
         ports:
             - 8000:80
         environment:
